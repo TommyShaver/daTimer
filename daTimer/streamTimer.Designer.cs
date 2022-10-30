@@ -51,7 +51,7 @@
             this.zeldaBTN.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.zeldaBTN.Size = new System.Drawing.Size(75, 23);
             this.zeldaBTN.TabIndex = 0;
-            this.zeldaBTN.Text = "Zedal";
+            this.zeldaBTN.Text = "Zelda";
             this.zeldaBTN.UseVisualStyleBackColor = true;
             this.zeldaBTN.Click += new System.EventHandler(this.zeldaBTN_Click);
             // 
@@ -74,6 +74,7 @@
             this.loadBTN.TabIndex = 3;
             this.loadBTN.Text = "Load";
             this.loadBTN.UseVisualStyleBackColor = true;
+            this.loadBTN.Click += new System.EventHandler(this.loadBTN_Click);
             // 
             // saveBTN
             // 
@@ -83,6 +84,7 @@
             this.saveBTN.TabIndex = 4;
             this.saveBTN.Text = "Save";
             this.saveBTN.UseVisualStyleBackColor = true;
+            this.saveBTN.Click += new System.EventHandler(this.saveBTN_Click);
             // 
             // startBTN
             // 

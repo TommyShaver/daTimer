@@ -54,9 +54,22 @@ namespace daTimer
             
         }
 
+        private void saveBTN_Click(object sender, EventArgs e)
+        {
+            Settings1.Default.saveZTimer = zeldaTime.Text;
+            Settings1.Default.saveSTimer = splatoonTimer.Text;
+            Settings1.Default.Save();
+        }
+
+        private void loadBTN_Click(object sender, EventArgs e)
+        {
+            zeldaTime.Text = Settings1.Default.saveZTimer;
+            splatoonTimer.Text = Settings1.Default.saveSTimer;
+        }
 
         private void StreamTimer_Load_1(object sender, EventArgs e)
         {
+            //Timer Setting
             timer = new System.Timers.Timer();
             timer.Interval = 1;
             timer.Elapsed += OnTimeEvent;
